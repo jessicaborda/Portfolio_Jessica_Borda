@@ -1,10 +1,15 @@
 import styles from "./Header.module.scss";
 
-export default function Header({
-  navigationItems,
-}: {
-  navigationItems: { label: string; href: string }[];
-}) {
+interface NavigationItem {
+  label: string;
+  href: string;
+}
+
+interface HeaderProps {
+  navigationItems: NavigationItem[];
+}
+
+export default function Header({ navigationItems }: HeaderProps) {
   return (
     <header className={styles["header-container"]}>
       <div className={styles["header-container-line"]}></div>

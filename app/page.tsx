@@ -13,9 +13,28 @@ function HeaderSection() {
 }
 
 function HeroSection() {
+  const heroData = {
+    name: "Jessica Borda",
+    title: "Frontend Developer / Design Developer",
+    description: "Passionate about creating beautiful and functional web experiences.",
+    cvUrl: "/cv.pdf",
+    cvLabel: "Download CV",
+    profileImageSrc: "/profile.jpg",
+    profileImageAlt: "Jessica Borda",
+    socialLinks: [
+      {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/jessicaborda",
+        iconSrc: "/icons/linkedin.svg",
+      },
+      { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icons/github.svg" },
+      { name: "Behance", url: "https://behance.net/jessicaborda", iconSrc: "/icons/behance.svg" },
+    ],
+  };
+
   return (
     <section id="about">
-      <Hero />
+      <Hero {...heroData} />
     </section>
   );
 }
@@ -29,9 +48,16 @@ function SkillsSection() {
 }
 
 function ExperienceSection() {
+  const experienceItems = [
+    { value: "+ 1.000", label: "Hours of code" },
+    { value: "+ 50", label: "Projects completed" },
+    { value: "+ 3", label: "Years of experience" },
+    { value: "+ 20", label: "Happy clients" },
+  ];
+
   return (
     <section id="experience">
-      <Experience />
+      <Experience items={experienceItems} />
     </section>
   );
 }

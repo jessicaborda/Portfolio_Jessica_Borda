@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   description: "TODO",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="es">
       <body className={`${inter.className} ${inter.variable} antialiased`}>{children}</body>

@@ -1,20 +1,48 @@
 import styles from "./Hero.module.scss";
+import HeroDescription from "./HeroDescription";
+import HeroSocialMedia from "./HeroSocialMedia";
 
-export default function Hero() {
+interface SocialLink {
+  name: string;
+  url: string;
+  iconSrc: string;
+}
+
+interface HeroProps {
+  name: string;
+  title: string;
+  description: string;
+  cvUrl: string;
+  cvLabel: string;
+  socialLinks: SocialLink[];
+  profileImageSrc: string;
+  profileImageAlt: string;
+}
+
+export default function Hero({
+  name,
+  title,
+  description,
+  cvUrl,
+  cvLabel,
+  socialLinks,
+  profileImageSrc,
+  profileImageAlt,
+}: HeroProps) {
   return (
     <div className={styles["hero-container"]}>
-      <div className={styles["hero-container-text"]}>
-        <div className={styles["hero-container-text-content"]}>
-          <h1>Hero</h1>
-          <h2>Frontend Developer / Design Developer</h2>
-          <p>Description</p>
-        </div>
-        <button>Download CV</button>
-      </div>
-      <div className={styles["hero-container-image"]}>
-        <img src="" alt="" />
-        <p>Redes Sociales</p>
-      </div>
+      <HeroDescription
+        name={name}
+        title={title}
+        description={description}
+        cvUrl={cvUrl}
+        cvLabel={cvLabel}
+      />
+      <HeroSocialMedia
+        links={socialLinks}
+        profileImageSrc={profileImageSrc}
+        profileImageAlt={profileImageAlt}
+      />
     </div>
   );
 }
