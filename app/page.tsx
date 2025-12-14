@@ -13,23 +13,43 @@ function HeaderSection() {
 }
 
 function HeroSection() {
-  return <Hero />;
+  return (
+    <section id="about">
+      <Hero />
+    </section>
+  );
 }
 
 function SkillsSection() {
-  return <Skills />;
+  return (
+    <section id="skills">
+      <Skills />
+    </section>
+  );
 }
 
 function ExperienceSection() {
-  return <Experience />;
+  return (
+    <section id="experience">
+      <Experience />
+    </section>
+  );
 }
 
 function ProjectsSection() {
-  return <Projects />;
+  return (
+    <section id="projects">
+      <Projects />
+    </section>
+  );
 }
 
 function ContactSection() {
-  return <Contact />;
+  return (
+    <section id="contact">
+      <Contact />
+    </section>
+  );
 }
 
 function FooterSection() {

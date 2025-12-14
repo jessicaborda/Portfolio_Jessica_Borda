@@ -2,7 +2,7 @@ import styles from "./Contact.module.scss";
 
 export default function Contact() {
   return (
-    <section className={styles["contact-container"]}>
+    <div className={styles["contact-container"]}>
       <div className={styles["contact-container-description"]}>
         <h2>Contact</h2>
         <p>Get in touch with me</p>
@@ -26,15 +26,14 @@ export default function Contact() {
         </div>
         <textarea
           className={styles["contact-container-form-textarea"]}
-          type="text"
           placeholder="Message"
           name=""
           id=""
-          cols="30"
-          rows="10"
+          cols={30}
+          rows={10}
         ></textarea>
         <button type="submit">Enviar</button>
       </form>
-    </section>
+    </div>
   );
 }

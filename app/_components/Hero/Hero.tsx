@@ -2,7 +2,7 @@ import styles from "./Hero.module.scss";
 
 export default function Hero() {
   return (
-    <section className={styles["hero-container"]}>
+    <div className={styles["hero-container"]}>
       <div className={styles["hero-container-text"]}>
         <div className={styles["hero-container-text-content"]}>
           <h1>Hero</h1>
@@ -15,6 +15,6 @@ export default function Hero() {
         <img src="" alt="" />
         <p>Redes Sociales</p>
       </div>
-    </section>
+    </div>
   );
 }
