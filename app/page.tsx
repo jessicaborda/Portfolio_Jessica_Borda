@@ -40,9 +40,45 @@ function HeroSection() {
 }
 
 function SkillsSection() {
+  const skillCategories = [
+    {
+      id: "design",
+      name: "Design Skills",
+      description: "Creating beautiful and intuitive user interfaces",
+      skills: [
+        { name: "Figma", level: "Advanced" },
+        { name: "Adobe XD", level: "Intermediate" },
+        { name: "UI/UX Design", level: "Advanced" },
+        { name: "Prototyping", level: "Advanced" },
+      ],
+    },
+    {
+      id: "frontend",
+      name: "Frontend Skills",
+      description: "Building responsive and performant web applications",
+      skills: [
+        { name: "React", level: "Advanced" },
+        { name: "Next.js", level: "Advanced" },
+        { name: "TypeScript", level: "Advanced" },
+        { name: "HTML/CSS", level: "Expert" },
+      ],
+    },
+    {
+      id: "technologies",
+      name: "Technologies",
+      description: "Tools and technologies I work with daily",
+      skills: [
+        { name: "Git", level: "Advanced" },
+        { name: "Node.js", level: "Intermediate" },
+        { name: "SASS", level: "Advanced" },
+        { name: "REST APIs", level: "Advanced" },
+      ],
+    },
+  ];
+
   return (
     <section id="skills">
-      <Skills />
+      <Skills categories={skillCategories} />
     </section>
   );
 }

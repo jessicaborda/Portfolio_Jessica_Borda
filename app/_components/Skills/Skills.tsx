@@ -1,17 +1,45 @@
-import styles from "./Skills.module.scss";
+"use client";
 
-export default function Skills() {
+import { useState } from "react";
+import styles from "./Skills.module.scss";
+import SkillsContent from "./SkillsContent";
+import SkillsMenu from "./SkillsMenu";
+
+interface Skill {
+  name: string;
+  level?: string;
+}
+
+interface SkillCategory {
+  id: string;
+  name: string;
+  description: string;
+  skills: Skill[];
+}
+
+interface SkillsProps {
+  categories: SkillCategory[];
+}
+
+export default function Skills({ categories }: SkillsProps) {
+  const [activeCategory, setActiveCategory] = useState(categories[0]?.id || "");
+
+  const selectedCategory = categories.find((cat) => cat.id === activeCategory);
+
   return (
     <div className={styles["skills-container"]}>
-      <div className={styles["skills-container-left"]}>
-        <h2 className={styles["skills-container-left-title"]}>Design Skills</h2>
-        <h2 className={styles["skills-container-left-title"]}>Frontend Skills</h2>
-        <h2 className={styles["skills-container-left-title"]}>Technologies</h2>
-      </div>
-      <div className={styles["skills-container-right"]}>
-        <h2>Design Skills</h2>
-        <p>Description</p>
-      </div>
+      <SkillsMenu
+        categories={categories}
+        activeCategory={activeCategory}
+        onCategorySelect={setActiveCategory}
+      />
+      {selectedCategory && (
+        <SkillsContent
+          title={selectedCategory.name}
+          description={selectedCategory.description}
+          skills={selectedCategory.skills}
+        />
+      )}
     </div>
   );
 }
