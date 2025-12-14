@@ -8,7 +8,7 @@ export default function Contact() {
         <p>Get in touch with me</p>
         <div className={styles["contact-container-item-content"]}>
           <img src="" alt="" />
-          <p>Redes sociales</p>
+          <p>Social Media</p>
         </div>
       </div>
       <form className={styles["contact-container-form"]} action="">
@@ -32,7 +32,7 @@ export default function Contact() {
           cols={30}
           rows={10}
         ></textarea>
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   );

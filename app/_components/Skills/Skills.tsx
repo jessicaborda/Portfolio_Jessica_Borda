@@ -6,7 +6,7 @@ export default function Skills() {
       <div className={styles["skills-container-left"]}>
         <h2 className={styles["skills-container-left-title"]}>Design Skills</h2>
         <h2 className={styles["skills-container-left-title"]}>Frontend Skills</h2>
-        <h2 className={styles["skills-container-left-title"]}>Technologys</h2>
+        <h2 className={styles["skills-container-left-title"]}>Technologies</h2>
       </div>
       <div className={styles["skills-container-right"]}>
         <h2>Design Skills</h2>

@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Portfolio Jessica Borda",
-  description: "TODO",
+  description: "Frontend Developer & Design Developer Portfolio",
 };
 
 interface RootLayoutProps {
@@ -21,7 +21,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body className={`${inter.className} ${inter.variable} antialiased`}>{children}</body>
     </html>
   );
