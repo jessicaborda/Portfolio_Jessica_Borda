@@ -78,7 +78,7 @@ function SkillsSection() {
 
   return (
     <section id="skills">
-      <Skills categories={skillCategories} />
+      <Skills skills={skillCategories} />
     </section>
   );
 }

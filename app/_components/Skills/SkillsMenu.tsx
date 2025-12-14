@@ -6,28 +6,28 @@ interface SkillCategory {
 }
 
 interface SkillsMenuProps {
-  categories: SkillCategory[];
-  activeCategory: string;
-  onCategorySelect: (categoryId: string) => void;
+  skills: SkillCategory[];
+  activeSkillCategory: string;
+  onSkillCategorySelect: (skillCategoryId: string) => void;
 }
 
 export default function SkillsMenu({
-  categories,
-  activeCategory,
-  onCategorySelect,
+  skills,
+  activeSkillCategory,
+  onSkillCategorySelect,
 }: SkillsMenuProps) {
   return (
     <div className={styles["skills-container-left"]}>
-      {categories.map((category) => (
+      {skills.map((skillCategory) => (
         <button
-          key={category.id}
+          key={skillCategory.id}
           className={`${styles["skills-container-left-title"]} ${
-            activeCategory === category.id ? styles["skills-container-left-title--active"] : ""
+            activeSkillCategory === skillCategory.id ? styles["skills-container-left-title--active"] : ""
           }`}
-          onClick={() => onCategorySelect(category.id)}
+          onClick={() => onSkillCategorySelect(skillCategory.id)}
           type="button"
         >
-          {category.name}
+          {skillCategory.name}
         </button>
       ))}
     </div>

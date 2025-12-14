@@ -18,26 +18,26 @@ interface SkillCategory {
 }
 
 interface SkillsProps {
-  categories: SkillCategory[];
+  skills: SkillCategory[];
 }
 
-export default function Skills({ categories }: SkillsProps) {
-  const [activeCategory, setActiveCategory] = useState(categories[0]?.id || "");
+export default function Skills({ skills }: SkillsProps) {
+  const [activeSkillCategory, setActiveSkillCategory] = useState(skills[0]?.id || "");
 
-  const selectedCategory = categories.find((cat) => cat.id === activeCategory);
+  const selectedSkillCategory = skills.find((cat) => cat.id === activeSkillCategory);
 
   return (
     <div className={styles["skills-container"]}>
       <SkillsMenu
-        categories={categories}
-        activeCategory={activeCategory}
-        onCategorySelect={setActiveCategory}
+        skills={skills}
+        activeSkillCategory={activeSkillCategory}
+        onSkillCategorySelect={setActiveSkillCategory}
       />
-      {selectedCategory && (
+      {selectedSkillCategory && (
         <SkillsContent
-          title={selectedCategory.name}
-          description={selectedCategory.description}
-          skills={selectedCategory.skills}
+          title={selectedSkillCategory.name}
+          description={selectedSkillCategory.description}
+          skills={selectedSkillCategory.skills}
         />
       )}
     </div>
