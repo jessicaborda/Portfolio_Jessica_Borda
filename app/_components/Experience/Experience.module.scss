@@ -1,0 +1,27 @@
+@use "../../_styles/variables" as *;
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+    background-color: #37007566;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        gap: 1rem;
+        border-right: solid 1px $background-light;
+        padding: 1rem;
+
+        &:last-child {
+            border-right: none;
+        }
+
+    }
+}

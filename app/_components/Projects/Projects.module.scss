@@ -1,0 +1,29 @@
+@use "../../_styles/variables" as *;
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem;
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 50%;
+        height: 40vh;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,44 @@
+@use "../../_styles/variables" as *;
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 4rem;
+
+    &-line {
+        flex: 1;
+        height: 1px;
+        background-color: white;
+    }
+
+    &-nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    &-nav-list-item {
+        padding: 0 1rem;
+        border-right: solid 1px $background-light;
+        text-align: center;
+
+        &:last-child {
+            border-right: none;
+        }
+
+    }
+
+    &-nav-list-item-link {
+        color: $text-white;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: $secondary-color;
+        }
+    }
+}

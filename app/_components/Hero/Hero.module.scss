@@ -1,0 +1,25 @@
+@use "../../_styles/variables" as *;
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
+}
