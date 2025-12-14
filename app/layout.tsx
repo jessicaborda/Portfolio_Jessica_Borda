@@ -8,7 +8,7 @@ const inter = Inter({
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   preload: true,
-})
+});
 
 export const metadata: Metadata = {
   title: "Portfolio Jessica Borda",
@@ -22,11 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${inter.className} ${inter.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.className} ${inter.variable} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -1,6 +1,5 @@
 // Home page
-import { Header, Hero, Skills, Experience, Projects, Contact } from "./_components";
-
+import { Contact, Experience, Header, Hero, Projects, Skills } from "./_components";
 
 function HeaderSection() {
   const navigationItems = [
@@ -10,39 +9,27 @@ function HeaderSection() {
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
-  return (
-    <Header navigationItems={navigationItems} />
-  )
+  return <Header navigationItems={navigationItems} />;
 }
 
 function HeroSection() {
-  return (
-    <Hero />
-  )
+  return <Hero />;
 }
 
 function SkillsSection() {
-  return (
-    <Skills />
-  )
+  return <Skills />;
 }
 
 function ExperienceSection() {
-  return (
-    <Experience />
-  )
+  return <Experience />;
 }
 
 function ProjectsSection() {
-  return (
-    <Projects />
-  )
+  return <Projects />;
 }
 
 function ContactSection() {
-  return (
-    <Contact />
-  )
+  return <Contact />;
 }
 
 function FooterSection() {
@@ -50,7 +37,7 @@ function FooterSection() {
     <footer>
       <h2>Footer</h2>
     </footer>
-  )
+  );
 }
 
 export default function Layout() {
