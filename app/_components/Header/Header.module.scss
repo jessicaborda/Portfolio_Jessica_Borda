@@ -7,11 +7,102 @@
     flex-direction: row;
     gap: 2rem;
     padding: 4rem;
+    position: relative;
+    z-index: 1000;
 
     &-line {
         flex: 1;
         height: 1px;
         background-color: white;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .header-hamburger {
+        display: none;
+        padding: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        z-index: 1001;
+
+        @media (max-width: 768px) {
+            display: inline-block;
+        }
+
+        .hamburger-box {
+            width: 30px;
+            height: 24px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .hamburger-inner {
+            display: block;
+            top: 50%;
+            margin-top: -2px;
+            width: 30px;
+            height: 3px;
+            background-color: $text-white;
+            border-radius: 4px;
+            position: absolute;
+            transition: transform 0.15s ease;
+
+            &::before, &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: $text-white;
+                border-radius: 4px;
+                position: absolute;
+                transition: transform 0.15s ease;
+            }
+
+            &::before {
+                top: -10px;
+            }
+
+            &::after {
+                bottom: -10px;
+            }
+        }
+
+        &.is-active {
+            .hamburger-inner {
+                transform: rotate(45deg);
+                &::before {
+                    top: 0;
+                    opacity: 0;
+                }
+                &::after {
+                    bottom: 0;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+
+    &-nav {
+        @media (max-width: 768px) {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($background-dark, 0.98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: right 0.3s ease-in-out;
+            backdrop-filter: blur(10px);
+
+            &.is-open {
+                right: 0;
+            }
+        }
     }
 
     &-nav-list {
@@ -19,12 +110,23 @@
         flex-direction: row;
         gap: 1rem;
         list-style: none;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
     }
 
     &-nav-list-item {
         padding: 0 1rem;
         border-right: solid 1px $background-light;
         text-align: center;
+
+        @media (max-width: 768px) {
+            border-right: none;
+            padding: 0;
+        }
 
         &:last-child {
             border-right: none;
@@ -35,6 +137,12 @@
     &-nav-list-item-link {
         color: $text-white;
         text-decoration: none;
+        transition: color 0.2s ease;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
 
         &:hover {
             cursor: pointer;

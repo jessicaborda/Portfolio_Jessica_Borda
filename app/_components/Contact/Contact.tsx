@@ -1,5 +1,6 @@
 import styles from "./Contact.module.scss";
 
+
 export default function Contact() {
   return (
     <div className={styles["contact-container"]}>
@@ -7,8 +8,7 @@ export default function Contact() {
         <h2>Contact</h2>
         <p>Get in touch with me</p>
         <div className={styles["contact-container-item-content"]}>
-          <img src="" alt="" />
-          <p>Social Media</p>
+          
         </div>
       </div>
       <form className={styles["contact-container-form"]} action="">

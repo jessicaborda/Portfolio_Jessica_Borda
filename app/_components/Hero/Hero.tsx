@@ -15,8 +15,6 @@ interface HeroProps {
   cvUrl: string;
   cvLabel: string;
   socialLinks: SocialLink[];
-  profileImageSrc: string;
-  profileImageAlt: string;
 }
 
 export default function Hero({
@@ -26,8 +24,6 @@ export default function Hero({
   cvUrl,
   cvLabel,
   socialLinks,
-  profileImageSrc,
-  profileImageAlt,
 }: HeroProps) {
   return (
     <div className={styles["hero-container"]}>
@@ -40,8 +36,6 @@ export default function Hero({
       />
       <HeroSocialMedia
         links={socialLinks}
-        profileImageSrc={profileImageSrc}
-        profileImageAlt={profileImageAlt}
       />
     </div>
   );

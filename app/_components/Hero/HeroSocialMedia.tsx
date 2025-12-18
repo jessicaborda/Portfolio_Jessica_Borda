@@ -9,24 +9,13 @@ interface SocialLink {
 
 interface HeroSocialMediaProps {
   links: SocialLink[];
-  profileImageSrc: string;
-  profileImageAlt: string;
 }
 
 export default function HeroSocialMedia({
   links,
-  profileImageSrc,
-  profileImageAlt,
 }: HeroSocialMediaProps) {
   return (
     <div className={styles["hero-container-social"]}>
-      <Image
-        className={styles["hero-container-social-profile"]}
-        src={profileImageSrc}
-        alt={profileImageAlt}
-        width={200}
-        height={200}
-      />
       <div className={styles["hero-container-social-links"]}>
         {links.map((link) => (
           <a
@@ -35,6 +24,7 @@ export default function HeroSocialMedia({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.name}
+            className={styles["hero-container-social-links-item"]}
           >
             <Image
               className={styles["hero-container-social-links-icon"]}
@@ -43,6 +33,7 @@ export default function HeroSocialMedia({
               width={32}
               height={32}
             />
+            <h5>{link.name}</h5>
           </a>
         ))}
       </div>

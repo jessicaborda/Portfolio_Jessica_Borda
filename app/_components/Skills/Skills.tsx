@@ -7,13 +7,14 @@ import SkillsMenu from "./SkillsMenu";
 
 interface Skill {
   name: string;
+  icon?: string;
   level?: string;
 }
 
 interface SkillCategory {
   id: string;
   name: string;
-  description: string;
+  description: string[];
   skills: Skill[];
 }
 

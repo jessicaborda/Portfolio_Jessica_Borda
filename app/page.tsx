@@ -16,19 +16,22 @@ function HeroSection() {
   const heroData = {
     name: "Jessica Borda",
     title: "Frontend Developer / Design Developer",
-    description: "Passionate about creating beautiful and functional web experiences.",
+    description: `Arquitecta civil orientada al diseño de experiencias digitales y al desarrollo frontend. Combino pensamiento estructural, diseño estratégico y código para crear productos digitales usables y escalables.
+
+Cuento con dos años de experiencia en UX/UI, con más de 1000 proyectos diseñados para distintos contextos y necesidades de negocio. Además, tengo un año de experiencia en frontend a través de proyectos personales, enfocados en convertir diseños en interfaces funcionales y accesibles.
+
+Me interesa crear productos digitales que no solo se vean bien, sino que funcionen de forma clara, eficiente y coherente para el usuario.`,
     cvUrl: "/cv.pdf",
-    cvLabel: "Download CV",
-    profileImageSrc: "/profile.jpg",
-    profileImageAlt: "Jessica Borda",
-    socialLinks: [
+    cvLabel: "Descargar CV",
+    socialLinks: [            
       {
-        name: "LinkedIn",
+        name: "Jessica Borda",
         url: "https://linkedin.com/in/jessicaborda",
-        iconSrc: "/icons/linkedin.svg",
+        iconSrc: "/icon_linkedin_contact.svg",
       },
-      { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icons/github.svg" },
-      { name: "Behance", url: "https://behance.net/jessicaborda", iconSrc: "/icons/behance.svg" },
+      { name: "Jessica Borda", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
+      { name: "@ars_design_st", url: "https://behance.net/jessicaborda", iconSrc: "/icon_instagram_contact.svg" },
+      { name: "jessi.borda09@gmail.com", url: "https://behance.net/jessicaborda", iconSrc: "/icon_email_contact.svg" },
     ],
   };
 
@@ -44,34 +47,44 @@ function SkillsSection() {
     {
       id: "design",
       name: "Design Skills",
-      description: "Creating beautiful and intuitive user interfaces",
+      description: ["UX Research y análisis de usuarios", "Wireframes y prototipos (low y high fidelity)", "Diseño de interfaces (UI Design)", "Design systems y componentes reutilizables", "Usabilidad y accesibilidad", ],
       skills: [
-        { name: "Figma", level: "Advanced" },
-        { name: "Adobe XD", level: "Intermediate" },
-        { name: "UI/UX Design", level: "Advanced" },
-        { name: "Prototyping", level: "Advanced" },
+        { name: "Figma", icon: "/figma_icon.svg" },
+        { name: "Affinity", icon: "/affinity_icon.svg" },
+        { name: "Autocad", icon: "/autocad_icon.svg" },
+        { name: "Sketchup", icon: "/sketchup_icon.svg" },
       ],
     },
     {
       id: "frontend",
       name: "Frontend Skills",
-      description: "Building responsive and performant web applications",
+      description: ["Responsive design", "Implementación de interfaces a partir de diseño", "Componentización de UI", "Manejo de estados y flujos básicos", "Optimización visual y de rendimiento", "Buenas prácticas de código y estructura" ],
       skills: [
-        { name: "React", level: "Advanced" },
-        { name: "Next.js", level: "Advanced" },
-        { name: "TypeScript", level: "Advanced" },
-        { name: "HTML/CSS", level: "Expert" },
+        { name: "HTML", icon: "/icon_linkedin_contact.svg" },
+        { name: "CSS", icon: "/icon_github_contact.svg" },
+        { name: "Javascript", icon: "/icon_instagram_contact.svg" },
+        { name: "Bootstrap", icon: "/icon_email_contact.svg" },
       ],
     },
     {
       id: "technologies",
       name: "Technologies",
-      description: "Tools and technologies I work with daily",
+      description: ["Desarrollo de interfaces con React", "Creación de proyectos modernos con Astro", "Aplicaciones web con Next.js", "Componentización y manejo de estado básico", "Integración de diseño en flujos modernos de frontend", "Integración de APIs y contenido dinámico", "Arquitectura de proyectos frontend escalables"],
       skills: [
-        { name: "Git", level: "Advanced" },
-        { name: "Node.js", level: "Intermediate" },
-        { name: "SASS", level: "Advanced" },
-        { name: "REST APIs", level: "Advanced" },
+        { name: "React", icon: "/icon_linkedin_contact.svg" },
+        { name: "Astro", icon: "/icon_github_contact.svg" },
+        { name: "Next.js", icon: "/icon_instagram_contact.svg" },
+        { name: "Git", icon: "/icon_email_contact.svg" },
+      ],
+    },
+    {
+      id: "artificial_intelligence",
+      name: "Artificial Intelligence",
+      description: ["Creación y edición de imágenes asistidas por IA", "Generación y optimización de textos y copys UX", "Uso de prompt engineering para obtener resultados precisos", "Asistencia en desarrollo frontend y refactorización de código", "Soporte en documentación técnica y funcional", "Optimización de flujos de trabajo en diseño y desarrollo", "Automatización y optimización de flujos con n8n" ],
+      skills: [
+        { name: "Cursor", icon: "/icon_linkedin_contact.svg" },
+        { name: "N8N", icon: "/icon_github_contact.svg" },
+        { name: "Prompt", icon: "/icon_instagram_contact.svg" },
       ],
     },
   ];
@@ -85,10 +98,10 @@ function SkillsSection() {
 
 function ExperienceSection() {
   const experienceItems = [
-    { value: "+ 1.000", label: "Hours of code" },
-    { value: "+ 50", label: "Projects completed" },
-    { value: "+ 3", label: "Years of experience" },
-    { value: "+ 20", label: "Happy clients" },
+    { value: "+ 1.000", label: "Proyectos diseñados" },
+    { value: "2 Años", label: "Experiencia en diseño UX/UI" },
+    { value: "1 Año", label: "Desarrollando proyectos frontend" },
+    { value: "100%", label: "Enfoque en el usuario" },
   ];
 
   return (

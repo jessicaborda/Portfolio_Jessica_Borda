@@ -52,3 +52,19 @@ h6 {
   font-size: 0.75rem;
   font-weight: 200;
 }
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: $secondary-color;
+  color: $text-black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 92vh;
+  }
+}
