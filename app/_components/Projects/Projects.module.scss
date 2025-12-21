@@ -12,17 +12,88 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        width: 50%;
+        width: 40%;
         padding: 1.5rem;
         gap: 1rem;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
     }
 
     &-cards {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: flex-start; 
+        width: 100%;
+        overflow-x: auto; 
+        scrollbar-width: none; 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+    }
+
+    &-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .scroll-button {
+        background: transparent;
+        border: 1px solid $secondary-color;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        width: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .pagination-dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid $secondary-color;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        outline: none;
+
+        &-active {
+            background-color: $secondary-color;
+            transform: scale(1.2);
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+        }
     }
 
     @media (max-width: 768px) {
@@ -38,9 +109,47 @@
         align-items: center;
     }
 
+    &-right {
+        width: 100%;
+    }
+
     &-cards {
         width: 100%;
     }
   }
 
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    width: 400px;
+    flex-shrink: 0; // Prevent compression in slider
+    scroll-snap-align: start;
+    height: auto;
+    gap: 1.5rem;
+    background-color: #37007566;
+    border-radius: 0.3rem;
+
+    &-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &-tools {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    &-tools-span {
+        background-color: $secondary-color;
+        color: $text-black;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.3rem;
+    }
 }

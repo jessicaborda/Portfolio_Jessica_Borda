@@ -19,7 +19,7 @@ export default function HeroSocialMedia({
       <div className={styles["hero-container-social-links"]}>
         {links.map((link) => (
           <a
-            key={link.name}
+            key={link.url}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"

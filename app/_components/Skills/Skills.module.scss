@@ -18,8 +18,8 @@
     &-title {
       width: 70%;
       padding: 1.5rem;
-      border: none;
       border-bottom: solid 1px $background-light;
+      border-radius: 0;
       background: transparent;
       color: $text-white;
       font-size: 1.25rem;
@@ -123,5 +123,17 @@
     width: 100%;
     gap: 2rem;
     padding: 2rem;
+
+    &-left {
+      width: 100%;
+
+      &-title {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      width: 100%;
+    }
   }
 }

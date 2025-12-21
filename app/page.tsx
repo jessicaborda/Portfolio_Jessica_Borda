@@ -25,13 +25,13 @@ Me interesa crear productos digitales que no solo se vean bien, sino que funcion
     cvLabel: "Descargar CV",
     socialLinks: [            
       {
-        name: "Jessica Borda",
+        name: "LinkedIn",
         url: "https://linkedin.com/in/jessicaborda",
         iconSrc: "/icon_linkedin_contact.svg",
       },
-      { name: "Jessica Borda", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
-      { name: "@ars_design_st", url: "https://behance.net/jessicaborda", iconSrc: "/icon_instagram_contact.svg" },
-      { name: "jessi.borda09@gmail.com", url: "https://behance.net/jessicaborda", iconSrc: "/icon_email_contact.svg" },
+      { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
+      { name: "@ars_design_st", url: "https://instagram.com/ars_design_st", iconSrc: "/icon_instagram_contact.svg" },
+      { name: "jessi.borda09@gmail.com", url: "mailto:jessi.borda09@gmail.com", iconSrc: "/icon_email_contact.svg" },
     ],
   };
 
@@ -112,9 +112,42 @@ function ExperienceSection() {
 }
 
 function ProjectsSection() {
+  const projectsData = {
+    intro: {
+      title: "Projects",
+      description: "Aquí se presentan algunos de los proyectos en los que he trabajado, integrando diseño y desarrollo.",
+    },
+    projects: [
+      {
+        image: "/path-to-image.jpg",
+        title: "Bauhaus Components",
+        description: "Librería de componentes basados en el estilo Bauhaus.",
+        tools: ["React", "TypeScript", "CSS", "Storybook"],
+      },
+      {
+        image: "/path-to-image.jpg",
+        title: "Bauhaus Concept",
+        description: "Concepto de diseño desarrollado para la librería de componentes Bauhaus.",
+        tools: ["Astro", "TypeScript", "SCSS"],
+      },
+      {
+        image: "/path-to-image.jpg",
+        title: "Quali",
+        description: "Plataforma para visualización de cursos laborales (Prueba de concepto).",
+        tools: ["HTML", "CSS", "JavaScript"],
+      },
+      {
+        image: "/path-to-image.jpg",
+        title: "Quali",
+        description: "Plataforma para visualización de cursos laborales (Prueba de concepto).",
+        tools: ["HTML", "CSS", "JavaScript"],
+      },
+    ],
+  };
+
   return (
     <section id="projects">
-      <Projects />
+      <Projects {...projectsData} />
     </section>
   );
 }
