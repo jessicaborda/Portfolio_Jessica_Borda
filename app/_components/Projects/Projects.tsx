@@ -10,6 +10,8 @@ interface ProjectItem {
   title: string;
   description: string;
   tools: string[];
+  figmaUrl?: string;
+  websiteUrl?: string;
 }
 
 interface ProjectsProps {
@@ -61,6 +63,8 @@ export default function Projects({ intro, projects }: ProjectsProps) {
               title={project.title}
               description={project.description}
               tools={project.tools}
+              figmaUrl={project.figmaUrl}
+              websiteUrl={project.websiteUrl}
             />
           ))}
         </div>
