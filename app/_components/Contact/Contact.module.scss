@@ -13,8 +13,10 @@
         align-items: flex-start;
         justify-content: center;
         width: 50%;
-        height: 50vh;
-        padding: 1rem;
+        height: auto;
+        padding: 2.5rem;
+        gap: 2rem;
+        border-radius: 0.5rem;
         background-color: #62009766
     }
 
@@ -38,17 +40,38 @@
     &-form-inputs__input {
         padding: 1rem;
         width: 100%;
-        border-radius: 0.3rem;
-        border: 1px solid white;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
         background-color: transparent;
     }
 
     &-form-textarea {
         padding: 1rem;
         width: 100%;
-        border-radius: 0.3rem;
-        border: 1px solid white;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
         background-color: transparent;
+    }
+
+    &-form-inputs__input:focus {
+        outline: none;
+        border-bottom: 2px solid $secondary-color;
+    }
+
+    &-form-textarea {
+        padding: 1rem;
+        width: 100%;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+    }
+
+    &-form-textarea:focus {
+        outline: none;
+        border-bottom: 2px solid $secondary-color;
     }
 
     @media (max-width: 768px) {

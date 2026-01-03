@@ -12,6 +12,17 @@ function HeaderSection() {
   return <Header navigationItems={navigationItems} />;
 }
 
+const SOCIAL_LINKS = [
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/in/jessicaborda",
+    iconSrc: "/icon_linkedin_contact.svg",
+  },
+  { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
+  { name: "@ars_design_st", url: "https://instagram.com/ars_design_st", iconSrc: "/icon_instagram_contact.svg" },
+  { name: "jessi.borda09@gmail.com", url: "mailto:jessi.borda09@gmail.com", iconSrc: "/icon_email_contact.svg" },
+];
+
 function HeroSection() {
   const heroData = {
     name: "Jessica Borda",
@@ -23,16 +34,7 @@ Cuento con dos años de experiencia en UX/UI, con más de 1000 proyectos diseña
 Me interesa crear productos digitales que no solo se vean bien, sino que funcionen de forma clara, eficiente y coherente para el usuario.`,
     cvUrl: "/cv.pdf",
     cvLabel: "Descargar CV",
-    socialLinks: [            
-      {
-        name: "LinkedIn",
-        url: "https://linkedin.com/in/jessicaborda",
-        iconSrc: "/icon_linkedin_contact.svg",
-      },
-      { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
-      { name: "@ars_design_st", url: "https://instagram.com/ars_design_st", iconSrc: "/icon_instagram_contact.svg" },
-      { name: "jessi.borda09@gmail.com", url: "mailto:jessi.borda09@gmail.com", iconSrc: "/icon_email_contact.svg" },
-    ],
+    socialLinks: SOCIAL_LINKS,
   };
 
   return (
@@ -162,7 +164,7 @@ function ProjectsSection() {
 function ContactSection() {
   return (
     <section id="contact">
-      <Contact />
+      <Contact socialLinks={SOCIAL_LINKS} />
     </section>
   );
 }

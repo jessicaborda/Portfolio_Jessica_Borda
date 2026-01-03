@@ -1,12 +1,23 @@
+import HeroSocialMedia from "../Hero/HeroSocialMedia";
 import styles from "./Contact.module.scss";
 
+interface SocialLink {
+  name: string;
+  url: string;
+  iconSrc: string;
+}
 
-export default function Contact() {
+interface ContactProps {
+  socialLinks: SocialLink[];
+}
+
+export default function Contact({ socialLinks }: ContactProps) {
   return (
     <div className={styles["contact-container"]}>
       <div className={styles["contact-container-description"]}>
-        <h2>Contact</h2>
-        <p>Get in touch with me</p>
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto, una idea o una oportunidad en mente? Me encantaría conocerla y ver cómo puedo aportar desde el diseño y el desarrollo.</p>
+        <HeroSocialMedia links={socialLinks} />
         <div className={styles["contact-container-item-content"]}>
           
         </div>
@@ -32,7 +43,7 @@ export default function Contact() {
           cols={30}
           rows={10}
         ></textarea>
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );
