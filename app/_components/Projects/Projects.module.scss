@@ -126,7 +126,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 2rem;
-    width: 300px;
+    width: 400px;
     flex-shrink: 0; // Prevent compression in slider
     scroll-snap-align: start;
     height: auto;
@@ -137,7 +137,6 @@
     &-img-wrapper {
         position: relative;
         width: 100%;
-        min-height: 200px;
         height: 300px;
         overflow: hidden;
         border-radius: 0.3rem;

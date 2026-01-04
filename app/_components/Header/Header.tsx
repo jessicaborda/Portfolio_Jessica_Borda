@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 
 interface NavigationItem {
@@ -14,15 +14,25 @@ interface HeaderProps {
 
 export default function Header({ navigationItems }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className={styles["header-container"]}>
+    <header className={`${styles["header-container"]} ${scrolled ? styles["scrolled"] : ""}`}>
       <div className={styles["header-container-line"]}></div>
-      <button 
+      <button
         className={`${styles["header-hamburger"]} ${isMenuOpen ? styles["is-active"] : ""}`}
         onClick={toggleMenu}
         aria-label="Toggle menu"
@@ -35,8 +45,8 @@ export default function Header({ navigationItems }: HeaderProps) {
         <ul className={styles["header-container-nav-list"]}>
           {navigationItems.map((item) => (
             <li className={styles["header-container-nav-list-item"]} key={item.label}>
-              <a 
-                className={styles["header-container-nav-list-item-link"]} 
+              <a
+                className={styles["header-container-nav-list-item-link"]}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
               >

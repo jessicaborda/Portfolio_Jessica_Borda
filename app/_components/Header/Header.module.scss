@@ -7,8 +7,21 @@
     flex-direction: row;
     gap: 2rem;
     padding: 4rem;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
+    transition: all 0.3s ease;
+
+    &.scrolled {
+        padding: 1.5rem 4rem;
+        background-color: rgba($background-dark, 0.85);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 768px) {
+            padding: 1rem 2rem;
+        }
+    }
 
     &-line {
         flex: 1;

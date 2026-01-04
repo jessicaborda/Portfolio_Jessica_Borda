@@ -40,7 +40,7 @@ function HeroSection() {
 Cuento con dos años de experiencia en UX/UI, con más de 1000 proyectos diseñados para distintos contextos y necesidades de negocio. Además, tengo un año de experiencia en frontend a través de proyectos personales, enfocados en convertir diseños en interfaces funcionales y accesibles.
 
 Me interesa crear productos digitales que no solo se vean bien, sino que funcionen de forma clara, eficiente y coherente para el usuario.`,
-    cvUrl: "/cv.pdf",
+    cvUrl: "/CV_Jessica Borda.pdf",
     cvLabel: "Descargar CV",
     socialLinks: SOCIAL_LINKS,
   };
