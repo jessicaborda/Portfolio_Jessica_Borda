@@ -62,10 +62,17 @@ button {
   color: $text-black;
   font-weight: 600;
   cursor: pointer;
+  width: fit-content;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px 0 rgba(98, 0, 151, 0.2);
+    transition: all 0.3s ease;
+  }
 }
 
 @media (max-width: 768px) {
   body {
-    width: 92vh;
+    width: 100%;
   }
 }

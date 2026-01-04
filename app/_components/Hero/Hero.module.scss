@@ -44,11 +44,13 @@
     &-links {
       display: flex;
       flex-direction: column;
+      flex: 1;
       gap: 1rem;
 
       &-item {
         display: flex;
         align-items: center;
+        flex: 1;
         gap: 0.8rem;
         text-decoration: none;
         color: inherit;
@@ -62,8 +64,6 @@
           h5 {
             color: $secondary-color;
           }
-           // We can also target the icon if we want, but the icon has its own class/hover.
-           // Leaving as is keeps it simple.
         }
       }
 
@@ -88,6 +88,11 @@
 
     &-text {
       width: 100%;
+    }
+
+    &-social {
+      width: 100%;
+      flex-wrap: wrap;
     }
   }
 }

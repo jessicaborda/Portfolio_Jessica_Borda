@@ -26,9 +26,17 @@
     }
 
     @media (max-width: 768px) {
-    width: 100%;
-    padding: 2rem;
+    flex: 1;
+    padding: 0.5rem;
     text-align: center;
+    gap: 1rem;
+
+    &-item {
+        border-right: none;
+        border-bottom: solid 1px $background-light;
+        width: 100%;
+        gap: 0.5rem;
+    }
   }
 
 }

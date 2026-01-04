@@ -1,5 +1,5 @@
 // Home page
-import { Contact, Experience, Header, Hero, Projects, Skills } from "./_components";
+import { Contact, Experience, Footer, Header, Hero, Projects, Skills } from "./_components";
 
 function HeaderSection() {
   const navigationItems = [
@@ -19,8 +19,16 @@ const SOCIAL_LINKS = [
     iconSrc: "/icon_linkedin_contact.svg",
   },
   { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
-  { name: "@ars_design_st", url: "https://instagram.com/ars_design_st", iconSrc: "/icon_instagram_contact.svg" },
-  { name: "jessi.borda09@gmail.com", url: "mailto:jessi.borda09@gmail.com", iconSrc: "/icon_email_contact.svg" },
+  {
+    name: "@ars_design_st",
+    url: "https://instagram.com/ars_design_st",
+    iconSrc: "/icon_instagram_contact.svg",
+  },
+  {
+    name: "jessi.borda09@gmail.com",
+    url: "mailto:jessi.borda09@gmail.com",
+    iconSrc: "/icon_email_contact.svg",
+  },
 ];
 
 function HeroSection() {
@@ -49,7 +57,13 @@ function SkillsSection() {
     {
       id: "design",
       name: "Design Skills",
-      description: ["UX Research y análisis de usuarios", "Wireframes y prototipos (low y high fidelity)", "Diseño de interfaces (UI Design)", "Design systems y componentes reutilizables", "Usabilidad y accesibilidad", ],
+      description: [
+        "UX Research y análisis de usuarios",
+        "Wireframes y prototipos (low y high fidelity)",
+        "Diseño de interfaces (UI Design)",
+        "Design systems y componentes reutilizables",
+        "Usabilidad y accesibilidad",
+      ],
       skills: [
         { name: "Figma", icon: "/figma_icon.svg" },
         { name: "Affinity", icon: "/affinity_icon.svg" },
@@ -60,7 +74,14 @@ function SkillsSection() {
     {
       id: "frontend",
       name: "Frontend Skills",
-      description: ["Responsive design", "Implementación de interfaces a partir de diseño", "Componentización de UI", "Manejo de estados y flujos básicos", "Optimización visual y de rendimiento", "Buenas prácticas de código y estructura" ],
+      description: [
+        "Responsive design",
+        "Implementación de interfaces a partir de diseño",
+        "Componentización de UI",
+        "Manejo de estados y flujos básicos",
+        "Optimización visual y de rendimiento",
+        "Buenas prácticas de código y estructura",
+      ],
       skills: [
         { name: "HTML", icon: "/html_icon.svg" },
         { name: "CSS", icon: "/css_icon.svg" },
@@ -70,7 +91,15 @@ function SkillsSection() {
     {
       id: "technologies",
       name: "Technologies",
-      description: ["Desarrollo de interfaces con React", "Creación de proyectos modernos con Astro", "Aplicaciones web con Next.js", "Componentización y manejo de estado básico", "Integración de diseño en flujos modernos de frontend", "Integración de APIs y contenido dinámico", "Arquitectura de proyectos frontend escalables"],
+      description: [
+        "Desarrollo de interfaces con React",
+        "Creación de proyectos modernos con Astro",
+        "Aplicaciones web con Next.js",
+        "Componentización y manejo de estado básico",
+        "Integración de diseño en flujos modernos de frontend",
+        "Integración de APIs y contenido dinámico",
+        "Arquitectura de proyectos frontend escalables",
+      ],
       skills: [
         { name: "React", icon: "/react_icon.svg" },
         { name: "Astro", icon: "/astro_icon.svg" },
@@ -81,7 +110,15 @@ function SkillsSection() {
     {
       id: "artificial_intelligence",
       name: "Artificial Intelligence",
-      description: ["Creación y edición de imágenes asistidas por IA", "Generación y optimización de textos y copys UX", "Uso de prompt engineering para obtener resultados precisos", "Asistencia en desarrollo frontend y refactorización de código", "Soporte en documentación técnica y funcional", "Optimización de flujos de trabajo en diseño y desarrollo", "Automatización y optimización de flujos con n8n" ],
+      description: [
+        "Creación y edición de imágenes asistidas por IA",
+        "Generación y optimización de textos y copys UX",
+        "Uso de prompt engineering para obtener resultados precisos",
+        "Asistencia en desarrollo frontend y refactorización de código",
+        "Soporte en documentación técnica y funcional",
+        "Optimización de flujos de trabajo en diseño y desarrollo",
+        "Automatización y optimización de flujos con n8n",
+      ],
       skills: [
         { name: "Cursor", icon: "/cursor_icon.svg" },
         { name: "N8N", icon: "/n8n_icon.svg" },
@@ -116,7 +153,8 @@ function ProjectsSection() {
   const projectsData = {
     intro: {
       title: "Projects",
-      description: "Aquí se presentan algunos de los proyectos en los que he trabajado, integrando diseño y desarrollo.",
+      description:
+        "Aquí se presentan algunos de los proyectos en los que he trabajado, integrando diseño y desarrollo.",
     },
     projects: [
       {
@@ -124,7 +162,8 @@ function ProjectsSection() {
         title: "Bauhaus Components",
         description: "Librería de componentes basados en el estilo Bauhaus.",
         tools: ["React", "TypeScript", "CSS", "Storybook"],
-        figmaUrl: "https://www.figma.com/design/io9044XRoqlAUxopIsKMBQ/Bauhaus_components?node-id=0-1&t=ZElwSkrDinqWJBlY-1",
+        figmaUrl:
+          "https://www.figma.com/design/io9044XRoqlAUxopIsKMBQ/Bauhaus_components?node-id=0-1&t=ZElwSkrDinqWJBlY-1",
         websiteUrl: "https://www.npmjs.com/package/@ars-design/bauhaus-ui",
       },
       {
@@ -132,7 +171,8 @@ function ProjectsSection() {
         title: "Bauhaus Concept",
         description: "Concepto de diseño desarrollado para la librería de componentes Bauhaus.",
         tools: ["Astro", "TypeScript", "SCSS"],
-        figmaUrl: "https://www.figma.com/design/9K3ASYJ0ouwYxFDWsEQDqd/Bauhaus_concept?t=506teaUjrX14k37c-1",
+        figmaUrl:
+          "https://www.figma.com/design/9K3ASYJ0ouwYxFDWsEQDqd/Bauhaus_concept?t=506teaUjrX14k37c-1",
         websiteUrl: "https://jessicaborda.github.io/Bauhaus_concept/",
       },
       {
@@ -148,7 +188,8 @@ function ProjectsSection() {
         title: "Entrelíneas",
         description: "Sitio web oficial de la Fundación Entrelíneas, desarrollado con Astro.",
         tools: ["En proceso"],
-        figmaUrl: "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
+        figmaUrl:
+          "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
         websiteUrl: "https://wtoloza-dev.github.io/fundacion-entre-lineas/",
       },
     ],
@@ -170,11 +211,7 @@ function ContactSection() {
 }
 
 function FooterSection() {
-  return (
-    <footer>
-      <h2>Footer</h2>
-    </footer>
-  );
+  return <Footer />;
 }
 
 export default function Layout() {

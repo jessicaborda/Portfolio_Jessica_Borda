@@ -25,7 +25,8 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
     <html lang="en">
       <body className={`${inter.className} ${inter.variable} antialiased`}>
         <AnimatedBackground />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }

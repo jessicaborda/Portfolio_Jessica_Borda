@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    padding: 4rem;
+    gap: 2rem;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 0.5rem;
+
+        &__line {
+            flex: 1;
+            height: 1px;
+            background-color: #E2DADA;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+        gap: 1rem;
+    }
+}
