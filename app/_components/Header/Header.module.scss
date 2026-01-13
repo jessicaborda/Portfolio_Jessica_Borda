@@ -10,6 +10,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    @include max-width-container;
     transition: all 0.3s ease;
 
     &.scrolled {
@@ -21,6 +22,8 @@
         @media (max-width: 768px) {
             padding: 1rem 2rem;
         }
+
+        @include max-width-container;
     }
 
     &-line {

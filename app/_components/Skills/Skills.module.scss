@@ -7,6 +7,7 @@
   align-items: flex-start;
   height: fit-content;
   padding: 4rem;
+  @include max-width-container;
 
   &-left {
     display: flex;

@@ -22,7 +22,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${inter.className} ${inter.variable} antialiased`}>
         <AnimatedBackground />
         {children}

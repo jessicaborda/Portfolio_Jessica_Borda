@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem;
+  @include max-width-container;
 
   &-text {
     display: flex;

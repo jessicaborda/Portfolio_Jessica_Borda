@@ -190,7 +190,7 @@ function ProjectsSection() {
         tools: ["En proceso"],
         figmaUrl:
           "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
-        websiteUrl: "https://wtoloza-dev.github.io/fundacion-entre-lineas/",
+        websiteUrl: "https://jessicaborda.github.io/Fundacion_Entrelineas/",
       },
     ],
   };

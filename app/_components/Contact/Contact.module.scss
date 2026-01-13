@@ -3,11 +3,16 @@
 .contact-section {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     max-width: 1200px;
     width: 100%;
     padding: 4rem;
+    @include max-width-container;
+    
+    @media (min-width: 1700px) {
+        max-width: 1500px;
+    }
     gap: 4rem;
 
 
@@ -34,11 +39,13 @@
         padding: 2rem;
         gap: 1.5rem;
         border-radius: 1.5rem;
+        width: 100%;
 
         &__group {
             display: flex;
             flex-direction: row;
             gap: 1rem;
+            width: 100%;
         }
 
     &__label {
@@ -46,6 +53,7 @@
             flex-direction: column;
             gap: 0.5rem;
             width: 100%;
+            flex: 1;
 
             span {
                 font-size: 0.9rem;
@@ -55,8 +63,9 @@
         }
 
         &__input {
-            padding: 1rem;
             width: 100%;
+            padding: 1rem;
+            flex: 1;
             color: white;
             border: none;
             border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
