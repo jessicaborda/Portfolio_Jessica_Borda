@@ -1,5 +1,6 @@
 // Home page
 import { Contact, Experience, Footer, Header, Hero, Projects, Skills } from "./_components";
+import { getAssetPath } from "./_lib/utils";
 
 function HeaderSection() {
   const navigationItems = [
@@ -16,18 +17,22 @@ const SOCIAL_LINKS = [
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/jessicaborda",
-    iconSrc: "/icon_linkedin_contact.svg",
+    iconSrc: getAssetPath("/icon_linkedin_contact.svg"),
   },
-  { name: "GitHub", url: "https://github.com/jessicaborda", iconSrc: "/icon_github_contact.svg" },
+  {
+    name: "GitHub",
+    url: "https://github.com/jessicaborda",
+    iconSrc: getAssetPath("/icon_github_contact.svg"),
+  },
   {
     name: "@ars_design_st",
     url: "https://instagram.com/ars_design_st",
-    iconSrc: "/icon_instagram_contact.svg",
+    iconSrc: getAssetPath("/icon_instagram_contact.svg"),
   },
   {
     name: "jessi.borda09@gmail.com",
     url: "mailto:jessi.borda09@gmail.com",
-    iconSrc: "/icon_email_contact.svg",
+    iconSrc: getAssetPath("/icon_email_contact.svg"),
   },
 ];
 
@@ -40,7 +45,7 @@ function HeroSection() {
 Cuento con dos años de experiencia en UX/UI, con más de 1000 proyectos diseñados para distintos contextos y necesidades de negocio. Además, tengo un año de experiencia en frontend a través de proyectos personales, enfocados en convertir diseños en interfaces funcionales y accesibles.
 
 Me interesa crear productos digitales que no solo se vean bien, sino que funcionen de forma clara, eficiente y coherente para el usuario.`,
-    cvUrl: "/CV_Jessica Borda.pdf",
+    cvUrl: getAssetPath("/CV_Jessica Borda.pdf"),
     cvLabel: "Descargar CV",
     socialLinks: SOCIAL_LINKS,
   };
@@ -65,10 +70,10 @@ function SkillsSection() {
         "Usabilidad y accesibilidad",
       ],
       skills: [
-        { name: "Figma", icon: "/figma_icon.svg" },
-        { name: "Affinity", icon: "/affinity_icon.svg" },
-        { name: "Autocad", icon: "/autocad_icon.svg" },
-        { name: "Sketchup", icon: "/sketchup_icon.svg" },
+        { name: "Figma", icon: getAssetPath("/figma_icon.svg") },
+        { name: "Affinity", icon: getAssetPath("/affinity_icon.svg") },
+        { name: "Autocad", icon: getAssetPath("/autocad_icon.svg") },
+        { name: "Sketchup", icon: getAssetPath("/sketchup_icon.svg") },
       ],
     },
     {
@@ -83,9 +88,9 @@ function SkillsSection() {
         "Buenas prácticas de código y estructura",
       ],
       skills: [
-        { name: "HTML", icon: "/html_icon.svg" },
-        { name: "CSS", icon: "/css_icon.svg" },
-        { name: "Javascript", icon: "/javascript_icon.svg" },
+        { name: "HTML", icon: getAssetPath("/html_icon.svg") },
+        { name: "CSS", icon: getAssetPath("/css_icon.svg") },
+        { name: "Javascript", icon: getAssetPath("/javascript_icon.svg") },
       ],
     },
     {
@@ -101,10 +106,10 @@ function SkillsSection() {
         "Arquitectura de proyectos frontend escalables",
       ],
       skills: [
-        { name: "React", icon: "/react_icon.svg" },
-        { name: "Astro", icon: "/astro_icon.svg" },
-        { name: "Next.js", icon: "/nextjs_icon.svg" },
-        { name: "Git", icon: "/git_icon.svg" },
+        { name: "React", icon: getAssetPath("/react_icon.svg") },
+        { name: "Astro", icon: getAssetPath("/astro_icon.svg") },
+        { name: "Next.js", icon: getAssetPath("/nextjs_icon.svg") },
+        { name: "Git", icon: getAssetPath("/git_icon.svg") },
       ],
     },
     {
@@ -120,9 +125,9 @@ function SkillsSection() {
         "Automatización y optimización de flujos con n8n",
       ],
       skills: [
-        { name: "Cursor", icon: "/cursor_icon.svg" },
-        { name: "N8N", icon: "/n8n_icon.svg" },
-        { name: "Prompt", icon: "/prompt_icon.svg" },
+        { name: "Cursor", icon: getAssetPath("/cursor_icon.svg") },
+        { name: "N8N", icon: getAssetPath("/n8n_icon.svg") },
+        { name: "Prompt", icon: getAssetPath("/prompt_icon.svg") },
       ],
     },
   ];
@@ -158,7 +163,7 @@ function ProjectsSection() {
     },
     projects: [
       {
-        image: "/bauhaus_components_portada.png",
+        image: getAssetPath("/bauhaus_components_portada.png"),
         title: "Bauhaus Components",
         description: "Librería de componentes basados en el estilo Bauhaus.",
         tools: ["React", "TypeScript", "CSS", "Storybook"],
@@ -167,7 +172,7 @@ function ProjectsSection() {
         websiteUrl: "https://www.npmjs.com/package/@ars-design/bauhaus-ui",
       },
       {
-        image: "/bauhaus_concept_portada.jpg",
+        image: getAssetPath("/bauhaus_concept_portada.jpg"),
         title: "Bauhaus Concept",
         description: "Concepto de diseño desarrollado para la librería de componentes Bauhaus.",
         tools: ["Astro", "TypeScript", "SCSS"],
@@ -176,7 +181,7 @@ function ProjectsSection() {
         websiteUrl: "https://jessicaborda.github.io/Bauhaus_concept/",
       },
       {
-        image: "/quali_portada.png",
+        image: getAssetPath("/quali_portada.png"),
         title: "Quali",
         description: "Plataforma para visualización de cursos laborales (Prueba de concepto).",
         tools: ["HTML", "CSS", "JavaScript"],
@@ -184,7 +189,7 @@ function ProjectsSection() {
         websiteUrl: "https://jessicaborda.github.io/Quali/",
       },
       {
-        image: "/entrelineas_portada.png",
+        image: getAssetPath("/entrelineas_portada.png"),
         title: "Entrelíneas",
         description: "Sitio web oficial de la Fundación Entrelíneas, desarrollado con Astro.",
         tools: ["En proceso"],
