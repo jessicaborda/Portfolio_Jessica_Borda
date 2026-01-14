@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -10,7 +11,7 @@ const nextConfig: NextConfig = {
   // Explicitly set the root to silence the Turbopack workspace warning
   // especially when there are multiple lockfiles in parent directories
   turbopack: {
-    root: ".",
+    root: path.resolve("."),
   },
 };
 
