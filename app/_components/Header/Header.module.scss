@@ -114,11 +114,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: right 0.3s ease-in-out;
+            transition: right 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
             backdrop-filter: blur(10px);
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
 
             &.is-open {
                 right: 0;
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;
             }
         }
     }

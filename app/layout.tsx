@@ -14,6 +14,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Portfolio Jessica Borda",
   description: "Frontend Developer & Design Developer Portfolio",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 interface RootLayoutProps {
