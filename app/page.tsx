@@ -40,12 +40,8 @@ function HeroSection() {
   const heroData = {
     name: "Jessica Borda",
     title: "Frontend Developer / Design Developer",
-    description: `Arquitecta civil orientada al diseño de experiencias digitales y al desarrollo frontend. Combino pensamiento estructural, diseño estratégico y código para crear productos digitales usables y escalables.
-
-Cuento con dos años de experiencia en UX/UI, con más de 1000 proyectos diseñados para distintos contextos y necesidades de negocio. Además, tengo un año de experiencia en frontend a través de proyectos personales, enfocados en convertir diseños en interfaces funcionales y accesibles.
-
-Me interesa crear productos digitales que no solo se vean bien, sino que funcionen de forma clara, eficiente y coherente para el usuario.`,
-    cvUrl: getAssetPath("/CV_Jessica Borda.pdf"),
+    description: `UX Engineer y Desarrolladora Frontend con formación en Arquitectura, especializada en la creación de interfaces de usuario listas para producción utilizando React, Next.js y TypeScript. Actúo como puente entre el diseño de interfaces complejas en Figma y su implementación frontend escalable, garantizando altos estándares de accesibilidad y rendimiento. Con experiencia profesional desarrollando soluciones digitales de alto volumen para agencias europeas, me enfoco en la creación de Design Systems que optimizan el desarrollo y aseguran la consistencia visual a gran escala.`,
+    cvUrl: getAssetPath("/Jessica Borda - ATS Format.pdf"),
     cvLabel: "Descargar CV",
     socialLinks: SOCIAL_LINKS,
   };
@@ -143,7 +139,7 @@ function ExperienceSection() {
   const experienceItems = [
     { value: "+ 1.000", label: "Proyectos diseñados" },
     { value: "2 Años", label: "Experiencia en diseño UX/UI" },
-    { value: "1 Año", label: "Desarrollando proyectos frontend" },
+    { value: "2.5 Años", label: "Desarrollando proyectos frontend" },
     { value: "100%", label: "Enfoque en el usuario" },
   ];
 
