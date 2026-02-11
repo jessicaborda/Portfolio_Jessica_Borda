@@ -185,10 +185,19 @@ function ProjectsSection() {
         websiteUrl: "https://jessicaborda.github.io/Quali/",
       },
       {
+        image: getAssetPath("/adoption_report_portada.png"),
+        title: "Adoption Report",
+        description: "Reporte de tendencias de adopción y uso de herramientas para empresas.",
+        tools: ["Next.js", "TypeScript", "CSS"],
+        figmaUrl:
+          "https://www.figma.com/design/TZxh6VRzyd2ls9QVdnIx9q/adoption_report?t=7XosbGvp4LagABUu-0",
+        websiteUrl: "https://jessicaborda.github.io/adoption-report/",
+      },
+      {
         image: getAssetPath("/entrelineas_portada.png"),
         title: "Entrelíneas",
         description: "Sitio web oficial de la Fundación Entrelíneas, desarrollado con Astro.",
-        tools: ["En proceso"],
+        tools: ["En proceso", "Astro"],
         figmaUrl:
           "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
         websiteUrl: "https://jessicaborda.github.io/Fundacion_Entrelineas/",
