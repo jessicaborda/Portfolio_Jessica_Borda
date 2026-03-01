@@ -40,7 +40,7 @@ function HeroSection() {
   const heroData = {
     name: "Jessica Borda",
     title: "Frontend Developer / Design Developer",
-    description: `UX Engineer y Desarrolladora Frontend con formación en Arquitectura, especializada en la creación de interfaces de usuario listas para producción utilizando React, Next.js y TypeScript. Actúo como puente entre el diseño de interfaces complejas en Figma y su implementación frontend escalable, garantizando altos estándares de accesibilidad y rendimiento. Con experiencia profesional desarrollando soluciones digitales de alto volumen para agencias europeas, me enfoco en la creación de Design Systems que optimizan el desarrollo y aseguran la consistencia visual a gran escala.`,
+    description: "UX Engineer y Desarrolladora Frontend con formación en Arquitectura, especializada en la creación de interfaces de usuario listas para producción utilizando React, Next.js y TypeScript. Actúo como puente entre el diseño de interfaces complejas en Figma y su implementación frontend escalable, garantizando altos estándares de accesibilidad y rendimiento. Con experiencia profesional desarrollando soluciones digitales de alto volumen para agencias europeas, me enfoco en la creación de Design Systems que optimizan el desarrollo y aseguran la consistencia visual a gran escala.",
     cvUrl: getAssetPath("/Jessica Borda - ATS Format.pdf"),
     cvLabel: "Descargar CV",
     socialLinks: SOCIAL_LINKS,
@@ -192,6 +192,15 @@ function ProjectsSection() {
         figmaUrl:
           "https://www.figma.com/design/TZxh6VRzyd2ls9QVdnIx9q/adoption_report?t=7XosbGvp4LagABUu-0",
         websiteUrl: "https://jessicaborda.github.io/adoption-report/",
+      },
+      {
+        image: getAssetPath("/artista_musical_portada.png"),
+        title: "Artista musical",
+        description: "Landing page para artista musical diseñado en Figma con prototipado.",
+        tools: ["Figma"],
+        figmaUrl:
+          "https://www.figma.com/design/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=0-1&p=f&t=vzJG37GwNzodrxGN-0",
+        websiteUrl: "https://www.figma.com/proto/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=1-39&t=vzJG37GwNzodrxGN-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A39",
       },
       {
         image: getAssetPath("/entrelineas_portada.png"),
