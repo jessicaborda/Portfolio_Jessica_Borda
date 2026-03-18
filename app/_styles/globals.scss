@@ -23,35 +23,47 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5em;
   font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   color: $secondary-color;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   color: $secondary-color;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.2em;
   font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: 0.8em;
   font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 
 button {

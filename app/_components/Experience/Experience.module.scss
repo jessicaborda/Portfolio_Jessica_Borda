@@ -19,6 +19,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex: 1;
         gap: 1rem;
         border-right: solid 1px $background-light;
@@ -31,15 +32,21 @@
     }
 
     @media (max-width: 768px) {
-    flex: 1;
-    padding: 0.5rem;
-    text-align: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 1rem;
     gap: 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     &-item {
-        border-right: none;
-        border-bottom: solid 1px $background-light;
-        width: 100%;
+        min-width: 250px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
         gap: 0.5rem;
     }
   }

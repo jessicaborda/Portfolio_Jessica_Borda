@@ -15,6 +15,11 @@
         justify-content: flex-start;
         width: 40%;
         padding: 1.5rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
     }
 
@@ -28,7 +33,7 @@
     &-cards {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: flex-start; 
         width: 100%;
         overflow-x: auto; 
@@ -49,23 +54,31 @@
 
     .scroll-button {
         background: transparent;
-        border: 1px solid $secondary-color;
+        border: 2px solid $secondary-color;
         border-radius: 50%;
-        width: 12px;
-        height: 12px;
+        width: 55px;
+        height: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         transition: all 0.3s ease;
+        color: $secondary-color;
 
-        &:hover {
+        &:hover:not(:disabled) {
             background-color: $secondary-color;
+            color: $text-black;
         }
 
-        img {
-            width: 20px;
-            height: 20px;
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
         }
     }
 
@@ -117,20 +130,27 @@
     &-cards {
         width: 100%;
     }
+
+    .scroll-button {
+        display: none;
+    }
   }
 
 }
 
 .cards-container {
+    height: auto;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2rem;
     width: 400px;
+    min-width: 300px;
+    overflow: hidden;
     flex-shrink: 0; // Prevent compression in slider
     scroll-snap-align: start;
-    height: auto;
     gap: 1.5rem;
     background-color: #37007566;
     border-radius: 0.3rem;
@@ -201,6 +221,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+        margin-top: auto;
     }
 
     &-tools-span {

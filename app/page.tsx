@@ -39,8 +39,8 @@ const SOCIAL_LINKS = [
 function HeroSection() {
   const heroData = {
     name: "Jessica Borda",
-    title: "Frontend Developer / Design Developer",
-    description: "UX Engineer y Desarrolladora Frontend con formación en Arquitectura, especializada en la creación de interfaces de usuario listas para producción utilizando React, Next.js y TypeScript. Actúo como puente entre el diseño de interfaces complejas en Figma y su implementación frontend escalable, garantizando altos estándares de accesibilidad y rendimiento. Con experiencia profesional desarrollando soluciones digitales de alto volumen para agencias europeas, me enfoco en la creación de Design Systems que optimizan el desarrollo y aseguran la consistencia visual a gran escala.",
+    title: "Diseñadora UX/UI con enfoque en frontend",
+    description: "Diseño experiencias digitales funcionales y las llevo a la realidad a través del código. Con formación en arquitectura, abordo los productos digitales como sistemas estructurados, equilibrando estética, usabilidad y funcionalidad. Me enfoco en transformar ideas en experiencias reales y utilizables. Además, mi conocimiento en desarrollo frontend me permite reducir la brecha entre diseño y desarrollo, facilitando la comunicación con equipos técnicos y asegurando que las soluciones sean viables y coherentes desde su concepción.",
     cvUrl: getAssetPath("/Jessica Borda - ATS Format.pdf"),
     cvLabel: "Descargar CV",
     socialLinks: SOCIAL_LINKS,
@@ -155,39 +155,54 @@ function ProjectsSection() {
     intro: {
       title: "Projects",
       description:
-        "Aquí se presentan algunos de los proyectos en los que he trabajado, integrando diseño y desarrollo.",
+        "Selección de proyectos enfocados en experiencia de usuario, sistemas visuales y desarrollo de interfaces funcionales.",
     },
     projects: [
       {
-        image: getAssetPath("/bauhaus_components_portada.png"),
-        title: "Bauhaus Components",
-        description: "Librería de componentes basados en el estilo Bauhaus.",
-        tools: ["React", "TypeScript", "CSS", "Storybook"],
+        image: getAssetPath("/descubre_boyaca_portada.png"),
+        title: "Descubre Boyacá",
+        description: "Diseño end-to-end enfocado en mejorar la experiencia de usuario mediante investigación, definición de flujos y prototipado funcional para plataforma de recomendación turística.",
+        tools: ["Figjam", "Figma", "Prototype", "Next.js"],
         figmaUrl:
-          "https://www.figma.com/design/io9044XRoqlAUxopIsKMBQ/Bauhaus_components?node-id=0-1&t=ZElwSkrDinqWJBlY-1",
-        websiteUrl: "https://www.npmjs.com/package/@ars-design/bauhaus-ui",
-      },
-      {
-        image: getAssetPath("/bauhaus_concept_portada.jpg"),
-        title: "Bauhaus Concept",
-        description: "Concepto de diseño desarrollado para la librería de componentes Bauhaus.",
-        tools: ["Astro", "TypeScript", "SCSS"],
-        figmaUrl:
-          "https://www.figma.com/design/9K3ASYJ0ouwYxFDWsEQDqd/Bauhaus_concept?t=506teaUjrX14k37c-1",
-        websiteUrl: "https://jessicaborda.github.io/Bauhaus_concept/",
+          "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Descubre-Boyac%C3%A1?node-id=254-3871&t=prbix1yiUCvnzjSG-0&scaling=min-zoom&content-scaling=fixed&page-id=249%3A9443",
+        websiteUrl: "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Descubre-Boyac%C3%A1?node-id=38-628&t=vHBF87r4D70DGTQR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A633",
+        websiteText: "Ver Prototipo",
+        figmaText: "Case Study",
       },
       {
         image: getAssetPath("/quali_portada.png"),
         title: "Quali",
-        description: "Plataforma para visualización de cursos laborales (Prueba de concepto).",
+        description: "Sistema de interfaz centrado en consistencia visual, jerarquía y escalabilidad de componentes para visualización de cursos laborales.",
         tools: ["HTML", "CSS", "JavaScript"],
         figmaUrl: "https://www.figma.com/design/EbZ4p4jaSintcakTWZ3GwH/QUALI?t=506teaUjrX14k37c-1",
-        websiteUrl: "https://jessicaborda.github.io/Quali/",
+        websiteUrl: "https://quali.tchunza.com/",
+        figmaText: "Prueba de concepto",
+        
+      },
+      {
+        image: getAssetPath("/bauhaus_concept_portada.jpg"),
+        title: "Bauhaus Concept",
+        description: "Exploración conceptual que traduce los principios de la Bauhaus en una interfaz digital funcional y responsiva.",
+        tools: ["Astro", "TypeScript", "SCSS"],
+        figmaUrl:
+          "https://www.figma.com/design/9K3ASYJ0ouwYxFDWsEQDqd/Bauhaus_concept?t=506teaUjrX14k37c-1",
+        websiteUrl: "https://jessicaborda.github.io/Bauhaus_concept/",
+        figmaText: "Case Study",
+      },
+      {
+        image: getAssetPath("/bauhaus_components_portada.png"),
+        title: "Bauhaus Components",
+        description: "Implementación de librería de componentes basados en el estilo Bauhaus listos para instalación y uso.",
+        tools: ["React", "TypeScript", "CSS", "Storybook"],
+        figmaUrl:
+          "https://www.figma.com/design/io9044XRoqlAUxopIsKMBQ/Bauhaus_components?node-id=0-1&t=ZElwSkrDinqWJBlY-1",
+        websiteUrl: "https://www.npmjs.com/package/@ars-design/bauhaus-ui",
+        figmaText: "Design System",
       },
       {
         image: getAssetPath("/adoption_report_portada.png"),
         title: "Adoption Report",
-        description: "Reporte de tendencias de adopción y uso de herramientas para empresas.",
+        description: "Diseño e implementación de reporte para análisis de tendencias de adopción y uso de herramientas IA para empresas.",
         tools: ["Next.js", "TypeScript", "CSS"],
         figmaUrl:
           "https://www.figma.com/design/TZxh6VRzyd2ls9QVdnIx9q/adoption_report?t=7XosbGvp4LagABUu-0",
@@ -196,21 +211,21 @@ function ProjectsSection() {
       {
         image: getAssetPath("/artista_musical_portada.png"),
         title: "Artista musical",
-        description: "Landing page para artista musical diseñado en Figma con prototipado.",
+        description: "Diseño UI de Landing page para artista musical.",
         tools: ["Figma"],
         figmaUrl:
           "https://www.figma.com/design/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=0-1&p=f&t=vzJG37GwNzodrxGN-0",
         websiteUrl: "https://www.figma.com/proto/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=1-39&t=vzJG37GwNzodrxGN-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A39",
       },
-      {
-        image: getAssetPath("/entrelineas_portada.png"),
-        title: "Entrelíneas",
-        description: "Sitio web oficial de la Fundación Entrelíneas, desarrollado con Astro.",
-        tools: ["En proceso", "Astro"],
-        figmaUrl:
-          "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
-        websiteUrl: "https://jessicaborda.github.io/Fundacion_Entrelineas/",
-      },
+      // {
+      //   image: getAssetPath("/entrelineas_portada.png"),
+      //   title: "Entrelíneas",
+      //   description: "Sitio web oficial de la Fundación Entrelíneas, desarrollado con Astro.",
+      //   tools: ["En proceso", "Astro"],
+      //   figmaUrl:
+      //     "https://www.figma.com/design/KJaB8Vo3UENOKV8TsckzKK/EntreL%C3%ADneas?node-id=0-1&t=506teaUjrX14k37c-1",
+      //   websiteUrl: "https://jessicaborda.github.io/Fundacion_Entrelineas/",
+      // },
     ],
   };
 

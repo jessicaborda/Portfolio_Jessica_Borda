@@ -22,8 +22,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
-    <html lang="es">
-      <body className={`${inter.className} ${inter.variable} antialiased`}>
+    <html lang="es" suppressHydrationWarning>
+      <body className={`${inter.className} ${inter.variable} antialiased`} suppressHydrationWarning>
         <AnimatedBackground />
         {children}
       </body>

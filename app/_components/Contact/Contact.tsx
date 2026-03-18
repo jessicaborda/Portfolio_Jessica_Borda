@@ -43,8 +43,7 @@ export default function Contact({ socialLinks }: ContactProps) {
       <div className={styles["contact-section-description"]}>
         <h2>Contacto</h2>
         <p>
-          ¿Tienes un proyecto, una idea o una oportunidad en mente? Me encantaría conocerla y ver
-          cómo puedo aportar desde el diseño y el desarrollo.
+          ¿Te interesa trabajar conmigo o conocer más sobre mi proceso? Estoy abierta a nuevas oportunidades y colaboraciones.
         </p>
         <HeroSocialMedia links={socialLinks} />
       </div>
@@ -89,7 +88,7 @@ export default function Contact({ socialLinks }: ContactProps) {
           />
         </label>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Contáctame</button>
       </form>
     </section>
   );

@@ -8,6 +8,8 @@ interface ProjectsCardProps {
   tools: string[];
   figmaUrl?: string;
   websiteUrl?: string;
+  figmaText?: string;
+  websiteText?: string;
 }
 
 export default function ProjectsCard({
@@ -17,6 +19,8 @@ export default function ProjectsCard({
   tools,
   figmaUrl,
   websiteUrl,
+  figmaText = "Ver Figma",
+  websiteText = "Ver Sitio web",
 }: ProjectsCardProps) {
   return (
     <div className={styles["cards-container"]}>
@@ -25,12 +29,12 @@ export default function ProjectsCard({
         <div className={styles["cards-container-img-hover"]}>
           {figmaUrl && (
             <a href={figmaUrl} target="_blank" rel="noopener noreferrer" className={styles["hover-button"]}>
-              Figma
+              {figmaText}
             </a>
           )}
           {websiteUrl && (
             <a href={websiteUrl} target="_blank" rel="noopener noreferrer" className={styles["hover-button"]}>
-              Sitioweb
+              {websiteText}
             </a>
           )}
         </div>

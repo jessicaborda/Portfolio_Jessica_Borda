@@ -13,4 +13,8 @@
       transparent 60%
     ),
     #000;
+
+  @media (max-width: 768px) {
+    background: linear-gradient(180deg, rgba(98, 0, 151, 0.4) 0%, #000 100%);
+  }
 }

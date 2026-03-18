@@ -12,6 +12,8 @@ interface ProjectItem {
   tools: string[];
   figmaUrl?: string;
   websiteUrl?: string;
+  figmaText?: string;
+  websiteText?: string;
 }
 
 interface ProjectsProps {
@@ -44,10 +46,40 @@ export default function Projects({ intro, projects }: ProjectsProps) {
     });
   };
 
+  const handlePrev = () => {
+    if (activeIndex > 0) scrollToIndex(activeIndex - 1);
+  };
+
+  const handleNext = () => {
+    if (activeIndex < projects.length - 1) scrollToIndex(activeIndex + 1);
+  };
+
   return (
     <div className={styles["projects-container"]}>
       <div className={styles["projects-container-description"]}>
         <Intro title={intro.title} description={intro.description} />
+        <div className={styles["projects-container-buttons"]}>
+          <button
+            className={styles["scroll-button"]}
+            onClick={handlePrev}
+            disabled={activeIndex === 0}
+            aria-label="Previous project"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+          <button
+            className={styles["scroll-button"]}
+            onClick={handleNext}
+            disabled={activeIndex === projects.length - 1}
+            aria-label="Next project"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+        </div>
       </div>
       
       <div className={styles["projects-container-right"]}>
@@ -65,6 +97,8 @@ export default function Projects({ intro, projects }: ProjectsProps) {
               tools={project.tools}
               figmaUrl={project.figmaUrl}
               websiteUrl={project.websiteUrl}
+              figmaText={project.figmaText}
+              websiteText={project.websiteText}
             />
           ))}
         </div>
