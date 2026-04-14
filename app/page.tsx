@@ -159,14 +159,13 @@ function ProjectsSection() {
     },
     projects: [
       {
-        image: getAssetPath("/descubre_boyaca_portada.png"),
-        title: "Descubre Boyacá",
+        image: getAssetPath("/fondo-explora-cta.png"),
+        title: "Explora Boyacá",
         description: "Diseño end-to-end enfocado en mejorar la experiencia de usuario mediante investigación, definición de flujos y prototipado funcional para plataforma de recomendación turística.",
         tools: ["Figjam", "Figma", "Prototype", "Next.js"],
         figmaUrl:
           "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Descubre-Boyac%C3%A1?node-id=254-3871&t=prbix1yiUCvnzjSG-0&scaling=min-zoom&content-scaling=fixed&page-id=249%3A9443",
-        websiteUrl: "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Descubre-Boyac%C3%A1?node-id=38-628&t=vHBF87r4D70DGTQR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A633",
-        websiteText: "Ver Prototipo",
+        websiteUrl: "https://exploraboyaca.com/",
         figmaText: "Case Study",
       },
       {
@@ -175,7 +174,7 @@ function ProjectsSection() {
         description: "Sistema de interfaz centrado en consistencia visual, jerarquía y escalabilidad de componentes para visualización de cursos laborales.",
         tools: ["HTML", "CSS", "JavaScript"],
         figmaUrl: "https://www.figma.com/design/EbZ4p4jaSintcakTWZ3GwH/QUALI?t=506teaUjrX14k37c-1",
-        websiteUrl: "https://quali.tchunza.com/",
+        websiteUrl: "https://www.quali.com.co/",
         figmaText: "Prueba de concepto",
         
       },
@@ -216,6 +215,7 @@ function ProjectsSection() {
         figmaUrl:
           "https://www.figma.com/design/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=0-1&p=f&t=vzJG37GwNzodrxGN-0",
         websiteUrl: "https://www.figma.com/proto/6ce7kTEyChMVRWLpodteuv/ARTISTA-MUSICAL?node-id=1-39&t=vzJG37GwNzodrxGN-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A39",
+        websiteText: "Ver prototipo"
       },
       // {
       //   image: getAssetPath("/entrelineas_portada.png"),
