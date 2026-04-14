@@ -124,6 +124,7 @@ function SkillsSection() {
         { name: "Cursor", icon: getAssetPath("/cursor_icon.svg") },
         { name: "N8N", icon: getAssetPath("/n8n_icon.svg") },
         { name: "Prompt", icon: getAssetPath("/prompt_icon.svg") },
+        { name: "Claude", icon: getAssetPath("/icon-claude-code.svg") },
       ],
     },
   ];
