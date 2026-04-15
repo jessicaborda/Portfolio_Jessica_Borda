@@ -165,7 +165,7 @@ function ProjectsSection() {
         description: "Diseño end-to-end enfocado en mejorar la experiencia de usuario mediante investigación, definición de flujos y prototipado funcional para plataforma de recomendación turística.",
         tools: ["Figjam", "Figma", "Prototype", "Next.js"],
         figmaUrl:
-          "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Descubre-Boyac%C3%A1?node-id=254-3871&t=prbix1yiUCvnzjSG-0&scaling=min-zoom&content-scaling=fixed&page-id=249%3A9443",
+          "https://www.figma.com/proto/fFxbrg51k30lwLacb7dVNk/Explora-Boyac%C3%A1?node-id=573-2815&t=tySTjVSFIgcpc0RR-0&scaling=min-zoom&content-scaling=fixed&page-id=249%3A9443",
         websiteUrl: "https://exploraboyaca.com/",
         figmaText: "Case Study",
       },
